@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generalstyles.css">
+    <title>Accessing the internet</title>
+</head>
+<body>
+    <section class="title">
+        <button align="left" class="return" onclick="location.href='index.html'"><img src="Return.png" alt="" class="return"></button>
+        <h1>Access the Internet</h1>
+    </section>
+    <br><br>
+    <center>
+        <div class="line">
+        <button class="device" id="1"><img src="access1.png" alt="" class="decoration"><br><h3>Webbrowser and Device</h3></button>
+        <p1 id="l1" class="content-access">
+            <section class="paragraph">
+                <p1 align="left">
+                    On every device, in order to access the internet, an essential piece of software is the web browser, which allows for the device to recieve and send information from the internet. It has an address bar, which when a URL (web address) is inputted to, sends said URL to the Domain Name System servers (DNS) which then sends back the corresponding IP address of the website. Once it recieves the HTML file of the page it is attempting to access, the web browser can then display it for the user to see.
+                    <br><br>
+                    Each device also has its own unique IP address, which allows for the servers to assign a destination for the files the device is requesting.
+                </p1>
+                <img src="access2.png" alt="">
+            </section>
+        </p1>
+        <br><br><img src="Arrow.jpg" alt="" class="arrow"><br><br>
+        </div>
+        <div class="line">
+        <button class="device" id="2"><img src="access3.jpg" class="decoration"><h3>Wireless Router</h3></button>
+        <p1 id="l2" class="content-access">
+            <section class="paragraph">
+                <img src="access4.jpg" alt="" align="left" class="portrait">
+                <p1 align="left">
+                    A router is used to send data to a specific destination on a network, a home router, also known as a hub, will route packets from one part of a network to another.
+                    <br><br>
+                    A router, asides from routeing packets, can also:
+                    <br>
+                    - Act as a wireless access point for Wi-Fi connections
+                    <br>
+                    - Connect the local network to the internet using a modem
+                    <br>
+                    - Assigns IP addresses to each device that is connected to it
+                    <br><br>
+                    A DHCP server is built into home routers, which when a new device is connected to it, assigns it a new IP address.
+                </p1> 
+            </section>
+        </p1>
+        <br><br><img src="Arrow.jpg" alt="" class="arrow"><br><br>
+        </div>
+        <div class="line">
+        <button class="device" id="3"><img src="access5.webp" alt="" class="decoration"><h3>Modem</h3></button>
+        <p1 id="l3" class="content-access">
+            <section class="paragraph">
+                <p1 align="left">
+                    A modem, also known as a modulator-demodulator, is a device that converts data from a digital format into a format suitable to be transmitted via a analog medium. Examples of which can be telephone or radio.
+                    <br><br>
+                    It connects a home router to the Internet Service Provider that allows for the access to the Internet. The connection is made via a cable (for cable or fiber internet) or phone line (DSL) from outside your house that plugs into the back of your modem. Your modem shares this connection with a computer or a router via an Ethernet cable.  
+                </p1>
+                <img src="access6.jpg" alt="">
+            </section>
+        </p1>
+        <br><br><img src="Arrow.jpg" alt="" class="arrow"><br><br>
+        </div>
+        <div class="line">
+        <button class="device" id="4"><img src="access7.png" alt="" class="decoration"><h3>The Internet</h3></button>
+        <p1 id="l4" class="content-access">
+            <section class="pngparagraph">
+                <img src="access8.webp" alt="" align="left" class="portrait">
+                <p1 align="left">
+                    The Internet is a vast network that connects computers all over the world. Through the Internet, people can share information and communicate from anywhere with an Internet connection.
+                    <br><br>
+                    The Internet provides a capability so powerful and general that it can be used for almost any purpose that depends on information, and it is accessible by every individual who connects to one of its constituent networks.
+                    <br><br>
+                    It is here that data can flow accross the world virtually instantaneously, and have completely revolutionalized the lifestyles of modern day humans. 
+                    <br><br>
+                    Fun fact: The entirety of the internet, weighed by its electrons, comes in at only 50 grams, the weight of a large strawberry.
+                </p1> 
+            </section>
+        </p1>
+        </div>
+    </center>
+    <br><br>
+    <section class="end"></section>
+    <script>
+        let l1s = 0;
+        document.getElementById('1').onclick = function(){
+            if(l1s < 1) {
+                document.getElementById('l1').style="opacity: 1; height: 18vw; margin-top: 1vw; padding-inline: 2vw; padding-block: 2vw; transition: 0.8s; ";
+                l1s = 1;
+            } else {
+                l1s = 0;
+                document.getElementById('l1').style="opacity: 0; height: 0px; margin-top: 0px; magin-bottom: 0px; padding-inline: 0vw; padding-block: 0vw; transition: 0.8s;";
+            }
+        }
+        let l2s = 0;
+        document.getElementById('2').onclick = function(){
+            if(l2s < 1) {
+                document.getElementById('l2').style="opacity: 1; height: 18vw; margin-top: 1vw; padding-inline: 2vw; padding-block: 2vw; transition: 0.8s; ";
+                l2s = 1;
+            } else {
+                l2s = 0;
+                document.getElementById('l2').style="opacity: 0; height: 0px; margin-top: 0px; magin-bottom: 0px; padding-inline: 0vw; padding-block: 0vw; transition: 0.8s;";
+            }
+        }
+        let l3s = 0;
+        document.getElementById('3').onclick = function(){
+            if(l3s < 1) {
+                document.getElementById('l3').style="opacity: 1; height: 18vw; margin-top: 1vw; padding-inline: 2vw; padding-block: 2vw; transition: 0.8s; ";
+                l3s = 1;
+            } else {
+                l3s = 0;
+                document.getElementById('l3').style="opacity: 0; height: 0px; margin-top: 0px; magin-bottom: 0px; padding-inline: 0vw; padding-block: 0vw; transition: 0.8s;";
+            }
+        }
+        let l4s = 0;
+        document.getElementById('4').onclick = function(){
+            if(l4s < 1) {
+                document.getElementById('l4').style="opacity: 1; height: 18vw; margin-top: 1vw; padding-inline: 2vw; padding-block: 2vw; transition: 0.8s; ";
+                l4s = 1;
+            } else {
+                l4s = 0;
+                document.getElementById('l4').style="opacity: 0; height: 0px; margin-top: 0px; magin-bottom: 0px; padding-inline: 0vw; padding-block: 0vw; transition: 0.8s;";
+            }
+        }
+    </script>
+</body>
+</html>

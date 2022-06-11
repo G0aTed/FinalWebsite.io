@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="generalstyles.css">
+    <title>HTTPS</title>
+</head>
+<body>
+    <section class="title">
+        <button align="left" class="return" onclick="location.href='index.html'"><img src="Return.png" alt="" class="return"></button>
+        <h1 style="margin-right: 20vw; margin-left: 10vw;">Hypertext Transfer Protocol Secure</h1>
+    </section>
+    <main>
+    <section class="header">
+        <h2>What is HTTPS?</h2>
+    </section>
+    <section class="paragraph">
+        <p1 align="left">
+            Hypertext Transfer Protocol Secure is a Hypertext Transfer Protocol extension. It is widely used on the Internet for secure communication over a computer network. HTTPS encrypts the communication protocol using Transport Layer Security.
+            <br><br>
+            The primary motivations for HTTPS are website authentication and the protection of the privacy and integrity of data exchanged while in transit. It protects against man-in-the-middle attacks, and bidirectional encryption protects communications between a client and server from eavesdropping and tampering.
+            <br><br>
+            HTTPS's security is based on the underlying TLS, which typically uses long-term public and private keys to generate a short-term session key, which is then used to encrypt data flow between the client and the server.
+        </p1>
+        <img src="https1.jpg" alt="" align="right" class="portrait" style="height: 15vw; width: 30vw;">
+    </section>
+    <center><img src="linesplit.png" alt="" class="split"></center>
+    <section class="header">
+        <h2>Plaintext, Ciphertext and Cryptography</h2>
+    </section>
+    <section class="paragraph">
+        <img src="https3.png" alt="" align="left" class="portrait" style="width: 40vw; height: 13vw; margin-left: 0;">
+        <p1 style="margin-right: 4vw;">
+            Ciphertext is encrypted text that has been converted from plaintext by an encryption algorithm. Ciphertext cannot be read until it has been decrypted. The decryption cipher is an algorithm that converts ciphertext to plaintext.
+            <br><br>
+            In data transimssion, To encrypt communications, HTTPS employs an encryption protocol, known as Transport Layer Security, but it was previously known as Secure Sockets Layer. This protocol protects communications by utilizing an asymmetric public key infrastructure.
+            <br><br>
+            HTTPS first encrypts the data it is being transferred, then the ciphertext is sent to your device. Once recieved, your device, using a key will then decrypt the ciphertext, turning it back into plaintext for you to view.
+        </p1>
+    </section>
+    <center><img src="linesplit.png" alt="" class="split"></center>
+    <section class="header">
+        <h2>Asymmetric Encryption</h2>
+    </section>
+    <section class="paragraph">
+        <p1 align="left">
+            Asymmetric encryption encrypts and decrypts data using two distinct but mathematically linked cryptographic keys. These keys are referred to as a "Public Key" and a "Private Key." They are known as a 'Public and Private Key Pair.'
+            <br><br>
+            A cryptographic algorithm is at the heart of Asymmetric Encryption. To generate a key pair, this algorithm employs a key generation protocol. Both keys are mathematically linked to one another. The relationship between the keys varies depending on the algorithm.
+            <br><br>
+            When one visits an HTTPS website/page,  the browser creates an Asymmetrically encrypted connection with that website. The public key of the SSL/TLS certificate installed on the website is automatically deduced by the aforementioned browser.
+        </p1>
+        <img src="https2.png" alt="" align="right" class="portrait">
+    </section>
+    <center><img src="linesplit.png" alt="" class="split"></center>
+    <section class="header">
+        <h2>Symmetric Encryption</h2>
+    </section>
+    <section class="paragraph">
+        <img src="https4.png" alt="" align="left" class="portrait" style="margin-left: 0;">
+        <p1 style="margin-right: 4vw;">
+            Symmetric encryption is a type of encryption that uses the same key to encrypt and decrypt electronic data. The key must be exchanged between the entities communicating using symmetric encryption so that it can be used in the decryption process.
+            <br><br>
+            While symmetric encryption is an older method of encryption, it is faster and more efficient than asymmetric encryption, which strains networks due to data size performance issues and heavy CPU use. Because symmetric encryption performs better and faster than asymmetric encryption, it is commonly used for bulk encryption / encrypting large amounts of data.
+        </p1>
+    </section>
+    <center><img src="linesplit.png" alt="" class="split"></center>
+    <section class="header">
+        <h2>Secure Sockets Layer (SSL)</h2>
+    </section>
+    <section class="paragraph">
+        <p1 align="left">
+            SSL, Secure Sockets Layer, is a protocol for establishing authenticated and encrypted links between networked computers. The protocol is widely used in applications such as email, instant messaging, and voice over IP, but its most visible use is in securing HTTPS.
+            <br><br>
+            SSL certificates help to keep online interactions private and reassure users that the website is genuine and safe to share personal information with. More importantly, an SSL certificate is required for an HTTPS web address, which means that HTTPS websites use SSL to encrypt their traffic.
+        </p1>
+        <img src="https5.webp" alt="" align="right" class="portrait">
+    </section>
+    </main>
+    <br><br>
+    <section class="end"></section>
+</body>
+</html>
